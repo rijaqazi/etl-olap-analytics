@@ -1,0 +1,219 @@
+{
+  "status": "PASS",
+  "sales_rows": 100,
+  "regional_rows": 100,
+  "regional_multiset_equals_all": true,
+  "distinct_order_ids": 100,
+  "duplicate_lookup_ids": {
+    "region": 0,
+    "country": 0,
+    "product": 0,
+    "channel": 0,
+    "branch": 0,
+    "category": 0
+  },
+  "foreign_key_orphans": {
+    "region": 0,
+    "country": 0,
+    "product": 0,
+    "channel": 0
+  },
+  "invalid_dates": 0,
+  "ship_before_order": 0,
+  "invalid_numeric_rows": 0,
+  "order_date_min": "2010-02-02",
+  "order_date_max": "2017-05-22",
+  "revenue_source_units": "137348768.31",
+  "cost_source_units": "93180569.91",
+  "gross_profit_source_units": "44168198.40",
+  "currency": "Not specified",
+  "provenance": "Unverified supplied sample",
+  "files": {
+    "Reigon.csv": {
+      "rows": 7,
+      "columns": [
+        "R_ID",
+        "Region"
+      ],
+      "missing_values": 0,
+      "exact_duplicate_excess": 0,
+      "sha256": "82385a859d0631ec4b60bb2da333364a118dc5ee71338cea62fb30c831f5a407"
+    },
+    "Country.csv": {
+      "rows": 76,
+      "columns": [
+        "C_ID",
+        "Country"
+      ],
+      "missing_values": 0,
+      "exact_duplicate_excess": 0,
+      "sha256": "bdd07d88643e7cf59f337c7e1d3901692418440b04aa0904ad090fe3073f8976"
+    },
+    "Product.csv": {
+      "rows": 16,
+      "columns": [
+        "I_ID",
+        "I_Type"
+      ],
+      "missing_values": 0,
+      "exact_duplicate_excess": 0,
+      "sha256": "c31af9820eb8f9ecd79cc51895ffd6923999ad7a33ecdb6c5abb28f35b285871"
+    },
+    "Channel.csv": {
+      "rows": 2,
+      "columns": [
+        "S_ID",
+        "S_Channel"
+      ],
+      "missing_values": 0,
+      "exact_duplicate_excess": 0,
+      "sha256": "f6510c2dcdea68124ceb488ec0980a3fcd597eade0641e41873a505797e21e71"
+    },
+    "Branch.csv": {
+      "rows": 3,
+      "columns": [
+        "B_ID",
+        "B_Name"
+      ],
+      "missing_values": 0,
+      "exact_duplicate_excess": 0,
+      "sha256": "5648f44cd5b95676f9fb7886b62a42791bb8c4e7db49af055e2091a5ec6005ee"
+    },
+    "Category.csv": {
+      "rows": 3,
+      "columns": [
+        "C_ID",
+        "C_Name"
+      ],
+      "missing_values": 0,
+      "exact_duplicate_excess": 0,
+      "sha256": "8362c9c22d63bb538ad7a323e10270f0ed4123707c6ef7185ade3ddb8b282eaf"
+    },
+    "SalesRecords-ALL.csv": {
+      "rows": 100,
+      "columns": [
+        "Region",
+        "Country",
+        "Item Type",
+        "Sales Channel",
+        "Order Date",
+        "Order ID",
+        "Ship Date",
+        "Units Sold",
+        "Unit Price",
+        "Unit Cost"
+      ],
+      "missing_values": 0,
+      "exact_duplicate_excess": 0,
+      "sha256": "f5c470923aa7dff2c7ca5220c5b6113d09f49a755b7e88e665cdef07285809bc"
+    },
+    "R1/R1.csv": {
+      "rows": 11,
+      "columns": [
+        "Region",
+        "Country",
+        "Item Type",
+        "Sales Channel",
+        "Order Date",
+        "Order ID",
+        "Ship Date",
+        "Units Sold",
+        "Unit Price",
+        "Unit Cost"
+      ],
+      "missing_values": 0,
+      "exact_duplicate_excess": 0,
+      "sha256": "62cafe53ff38f4e73b703a2cb5ab6cfe66fee068c84de92b3d2d27ae85bb18c3"
+    },
+    "R2/R2.csv": {
+      "rows": 11,
+      "columns": [
+        "Region",
+        "Country",
+        "Item Type",
+        "Sales Channel",
+        "Order Date",
+        "Order ID",
+        "Ship Date",
+        "Units Sold",
+        "Unit Price",
+        "Unit Cost"
+      ],
+      "missing_values": 0,
+      "exact_duplicate_excess": 0,
+      "sha256": "1ac09721bc3a86af4cd08610599b6312758f78bf2c8f0963f1d6dfc8e65fd2bd"
+    },
+    "R3/R3.csv": {
+      "rows": 7,
+      "columns": [
+        "Region",
+        "Country",
+        "Item Type",
+        "Sales Channel",
+        "Order Date",
+        "Order ID",
+        "Ship Date",
+        "Units Sold",
+        "Unit Price",
+        "Unit Cost"
+      ],
+      "missing_values": 0,
+      "exact_duplicate_excess": 0,
+      "sha256": "5d45a4f2719f571f1a17ad6f51085708fbc20a26e890673a65bc994131c46e35"
+    },
+    "R4/R4.csv": {
+      "rows": 22,
+      "columns": [
+        "Region",
+        "Country",
+        "Item Type",
+        "Sales Channel",
+        "Order Date",
+        "Order ID",
+        "Ship Date",
+        "Units Sold",
+        "Unit Price",
+        "Unit Cost"
+      ],
+      "missing_values": 0,
+      "exact_duplicate_excess": 0,
+      "sha256": "50773136459284b53afa85af9c0c755886fe33df0250c6a0b6a52117cb05ba12"
+    },
+    "R5/R5.csv": {
+      "rows": 10,
+      "columns": [
+        "Region",
+        "Country",
+        "Item Type",
+        "Sales Channel",
+        "Order Date",
+        "Order ID",
+        "Ship Date",
+        "Units Sold",
+        "Unit Price",
+        "Unit Cost"
+      ],
+      "missing_values": 0,
+      "exact_duplicate_excess": 0,
+      "sha256": "8015c8b891e57a5c4ce260628dc6b0b8727214255b9bb686729f1ebc5bf277fd"
+    },
+    "R6/R6.csv": {
+      "rows": 39,
+      "columns": [
+        "Region",
+        "Country",
+        "Item Type",
+        "Sales Channel",
+        "Order Date",
+        "Order ID",
+        "Ship Date",
+        "Units Sold",
+        "Unit Price",
+        "Unit Cost"
+      ],
+      "missing_values": 0,
+      "exact_duplicate_excess": 0,
+      "sha256": "559d57a1b4bfd22201ae04eaf14faa51115a70b8174852fcbe916a584b847042"
+    }
+  }
+}

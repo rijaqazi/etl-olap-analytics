@@ -1,0 +1,22 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "SalesUpsert", "SalesUpsert.dtproj", "{7195C0D3-07A0-9E0D-950A-321DC6156479}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7195C0D3-07A0-9E0D-950A-321DC6156479}.Development|Default.ActiveCfg = Development
+		{7195C0D3-07A0-9E0D-950A-321DC6156479}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {914CC4F5-0212-4F5F-B888-0D9B88D2A1C1}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "xml_definitions_parsed": 30,
+  "local_document_links_checked": 9,
+  "solution_and_project_references": "PASS",
+  "publication_text_scan": "PASS",
+  "sensitive_project_values": "No populated sensitive XML values found",
+  "pbix_integrity": "Valid ZIP; byte-identical to supplied original; live connection confirmed",
+  "b1_csv_validation": "PASS: 100 consolidated rows reconcile to 100 regional rows",
+  "runtime_validation": "Not performed: SSIS build/execution, SQL restore, SSAS deployment/processing, Power BI refresh",
+  "sql_mdx_examples": "Added and not executed",
+  "github_publication": "Not performed; high-priority runtime and reporting improvements documented"
+}

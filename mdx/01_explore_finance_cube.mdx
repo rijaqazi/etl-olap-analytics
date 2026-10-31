@@ -1,0 +1,26 @@
+/* Newly reconstructed diagnostic examples, not original saved query files.
+   Not executed during the review. Select the processed SSAS catalog first.
+   The cube name and member captions are taken from the supplied definitions.
+   These count records rather than summing identifier values. */
+
+-- Compare this baseline with COUNT_BIG(*) FROM AdventureWorksDW2019.dbo.FactFinance.
+SELECT {[Measures].[Fact Finance Count]} ON COLUMNS
+FROM [Adventure Works DW2019_financeview];
+
+-- Inspect finance-record coverage by year.
+SELECT {[Measures].[Fact Finance Count]} ON COLUMNS,
+ NON EMPTY [Dim Date].[Calendar Year].[Calendar Year].MEMBERS ON ROWS
+FROM [Adventure Works DW2019_financeview];
+
+-- Discover the scenario members; use their unique names for subsequent filters.
+SELECT {[Measures].[Fact Finance Count]} ON COLUMNS,
+ NON EMPTY [Dim Scenario].[Scenario Name].[Scenario Name].MEMBERS ON ROWS
+FROM [Adventure Works DW2019_financeview];
+
+-- Rank organizations by record count. This is NOT a revenue ranking.
+SELECT {[Measures].[Fact Finance Count]} ON COLUMNS,
+ TOPCOUNT(
+   [Dim Organization].[Organization Name].[Organization Name].MEMBERS,
+   10, [Measures].[Fact Finance Count]
+ ) ON ROWS
+FROM [Adventure Works DW2019_financeview];

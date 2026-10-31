@@ -1,0 +1,22 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "CsvAggregation", "CsvAggregation.dtproj", "{52D552C4-61CE-E55E-8789-DE3F828F5C79}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{52D552C4-61CE-E55E-8789-DE3F828F5C79}.Development|Default.ActiveCfg = Development
+		{52D552C4-61CE-E55E-8789-DE3F828F5C79}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C7CD7B23-DBA0-4F49-B93D-CA6B4DAB7EED}
+	EndGlobalSection
+EndGlobal

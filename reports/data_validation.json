@@ -1,0 +1,38 @@
+{
+  "rows": 100,
+  "regional_rows": 100,
+  "regional_multiset_equals_all": true,
+  "distinct_order_ids": 100,
+  "date_min": "2010-02-02",
+  "date_max": "2017-05-22",
+  "ship_before_order": 0,
+  "foreign_key_orphans": {
+    "region": 0,
+    "country": 0,
+    "product": 0,
+    "channel": 0
+  },
+  "region_counts": {
+    "1": 11,
+    "2": 11,
+    "3": 7,
+    "4": 22,
+    "5": 10,
+    "6": 39
+  },
+  "channel_counts": {
+    "1": 50,
+    "2": 50
+  },
+  "derived_revenue_source_units": "137348768.31",
+  "derived_cost_source_units": "93180569.91",
+  "derived_gross_profit_source_units": "44168198.40",
+  "gross_margin_pct": "32.15769529167611069929950652",
+  "currency": "Not specified in supplied files",
+  "duplicate_product_labels": {
+    "Clothes": 2,
+    "Household": 2,
+    "Office Supplies": 2,
+    "Cereal": 2
+  }
+}

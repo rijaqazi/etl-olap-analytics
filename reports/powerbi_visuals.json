@@ -1,0 +1,99 @@
+[
+  {
+    "page": "Page 1",
+    "type": "pieChart",
+    "projections": {
+      "Series": [
+        {
+          "queryRef": "Dim Department Group.Department Group Name"
+        }
+      ],
+      "Y": [
+        {
+          "queryRef": "Fact Finance.Finance Key"
+        }
+      ]
+    }
+  },
+  {
+    "page": "Page 1",
+    "type": "clusteredColumnChart",
+    "projections": {
+      "Y": [
+        {
+          "queryRef": "Fact Finance.Amount"
+        }
+      ],
+      "Category": [
+        {
+          "queryRef": "Dim Account.Parent Account Key.Level 05",
+          "active": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "Page 1",
+    "type": "clusteredBarChart",
+    "projections": {
+      "Category": [
+        {
+          "queryRef": "Dim Department Group.Department Group Name",
+          "active": true
+        }
+      ],
+      "Series": [
+        {
+          "queryRef": "Dim Organization.Organization Name"
+        }
+      ],
+      "Y": [
+        {
+          "queryRef": "Fact Finance.Amount"
+        }
+      ]
+    }
+  },
+  {
+    "page": "Page 1",
+    "type": "donutChart",
+    "projections": {
+      "Category": [
+        {
+          "queryRef": "Dim Organization.Organization Name",
+          "active": true
+        }
+      ],
+      "Series": [
+        {
+          "queryRef": "Dim Organization.Percentage Of Ownership"
+        }
+      ],
+      "Y": [
+        {
+          "queryRef": "Fact Finance.Fact Finance Count"
+        }
+      ]
+    }
+  },
+  {
+    "page": "Page 1",
+    "type": "tableEx",
+    "projections": {
+      "Values": [
+        {
+          "queryRef": "Dim Account.Account Code Alternate Key"
+        },
+        {
+          "queryRef": "Dim Account.Account Type"
+        },
+        {
+          "queryRef": "Dim Account.Account Description"
+        },
+        {
+          "queryRef": "Fact Finance.Amount"
+        }
+      ]
+    }
+  }
+]
