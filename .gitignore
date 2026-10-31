@@ -1,0 +1,22 @@
+# Local data and database backups
+data/b1/
+data/external/
+*.bak
+*.mdf
+*.ldf
+# Generated IDE and deployment artifacts
+**/.vs/
+**/bin/
+**/obj/
+*.user
+*.suo
+*.ispac
+*.asdatabase
+*.deploymenttargets
+*.deploymentoptions
+*.configsettings
+*.log
+__pycache__/
+.env
+.env.*
+*.zip
