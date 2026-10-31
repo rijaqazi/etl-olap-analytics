@@ -72,7 +72,7 @@ etl-olap-analytics/
 ├── scripts/      Read-only B1 validation tool
 ├── reports/      Measured data checks and report-layout inventory
 ├── assets/       Original technical screenshots
-├── docs/         Technical report, evidence guide, and setup
+├── docs/         Technical report, data dictionary, and setup
 └── data/         Source acquisition and handling notes
 ```
 
