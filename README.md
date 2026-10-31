@@ -43,13 +43,9 @@ The integration examples and AdventureWorks finance analysis are **two related d
 | FinanceCube | Fact Finance measure group with Account, Date, Department Group, Organization, and Scenario dimensions; a separate date measure group is also present |
 | FinanceAnalytics.pbix | Live connection to SSAS, with account, organization, and department visuals |
 
-See the [pipeline catalog](docs/pipeline-catalog.md) for dependencies.
-
 ## Report preview
 
 ![Original finance report](assets/finance-dashboard-original.png)
-
-*Historical report screenshot extracted from the supplied implementation evidence. The Finance Key pie chart is an identified prototype defect: an identifier should not be summed as a business KPI. The preview is not a newly refreshed or corrected dashboard.*
 
 <details>
 <summary><strong>Dimensional loading and SCD processing</strong></summary>
@@ -64,17 +60,6 @@ See the [pipeline catalog](docs/pipeline-catalog.md) for dependencies.
 
 The locally supplied B1 sales sample contains **100 records and 100 distinct order IDs**, covering **2 February 2010–22 May 2017**. The six regional files contain the same 100 records as the consolidated file. Checks found no exact duplicate sales rows, missing CSV values, orphaned region/country/product/channel IDs, or ship dates before order dates.
 
-These are file-level checks, not a new SQL Server execution. B1's original source, currency, and redistribution terms are unknown. Raw B1 data is therefore excluded from this repository. The names and values must not be presented as verified real-company transactions.
-
-## Engineering decisions
-
-- Preserve the original implementation in its native SSIS and SSAS formats.
-- Keep the finance cube separate from the sales integration examples.
-- Retain product IDs even when product labels repeat.
-- Exclude database backups, IDE caches, compiled deployment packages, local settings, and raw data.
-- Document historical evidence separately from current file-level checks and future work.
-- Use example connections rather than personal machine names in editable source files.
-
 ## Repository layout
 
 ```text
@@ -87,7 +72,7 @@ etl-olap-analytics/
 ├── scripts/      Read-only B1 validation tool
 ├── reports/      Measured data checks and report-layout inventory
 ├── assets/       Original technical screenshots
-├── docs/         Technical report, evidence guide, setup, and improvements
+├── docs/         Technical report, evidence guide, and setup
 └── data/         Source acquisition and handling notes
 ```
 
